@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Flexible Box Layout</title>
+	<style>
+		.flexbox {
+			background-color: dimgray;
+			width: 200px;
+			height: 300px;
+			border-radius: 15px;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		#flex_start {
+			-webkit-align-content: flex-start;
+			align-content: flex-start;
+		}
+		#center {
+			-webkit-align-content: center;
+			align-content: center;
+		}
+		#flex_end {
+			-webkit-align-content: flex-end;
+			align-content: flex-end;
+		}
+		.item {
+			background-color: darkgray;
+			border-radius: 10px;
+			width: 80px;
+			height: 50px;
+			margin: 10px;
+			color: white;
+			font-size: 26px;
+			text-align: center;
+			line-height: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>align-content 속성을 이용한 분포 설정</h1>
+
+	<h3>align-content의 속성값이 flex-start입니다.</h3>
+	<div id="flex_start" class="flexbox">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+	</div>
+	<h3>align-content의 속성값이 center입니다.</h3>
+	<div id="center" class="flexbox">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+	</div>
+	<h3>align-content의 속성값이 flex-end입니다.</h3>
+	<div id="flex_end" class="flexbox">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+	</div>
+
+</body>
+
+</html>
