@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Display</title>
+	<style>
+		img {
+			opacity: 0.4;
+			filter: alpha(opacity=40);
+		}
+		img:hover {
+			opacity: 1.0;
+			filter: alpha(opacity=100);
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>이미지 투명화</h1>
+	<img src="/examples/images/img_flower.png" width="350" height="263" alt="flower">
+	<p>이미지를 투명하게 만들어라</p>
+
+</body>
+
+</html>
