@@ -1,0 +1,21 @@
+.father{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 200vh;
+
+
+}
+
+.child{
+    /* height: 200px; */
+    width: 200px;
+    background: peru;
+    color:#fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
